@@ -1,0 +1,16 @@
+{
+  "name": "example",
+  "description": "The example role for all systems.",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "motd": { "managed_by": "ACME Labs" },
+    "resolver": { "nameservers": [ "8.8.8.8", "8.8.4.4" ] }
+  },
+  "override_attributes": {},
+  "chef_type": "role",
+  "run_list": [
+    "recipe[motd]",
+    "recipe[resolver]"
+  ],
+  "env_run_lists": {}
+}
