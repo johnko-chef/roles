@@ -44,6 +44,7 @@
   "run_list": [
     "recipe[motd]",
     "recipe[resolver]",
+    "recipe[sshd-config]",
     "recipe[system]"
   ],
   "env_run_lists": {}
