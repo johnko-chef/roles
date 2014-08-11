@@ -38,11 +38,21 @@
         "net.link.tap.user_open": "1",
         "net.link.tap.up_on_open": "1"
       }
+    },
+    "postfix": {
+      "mail_type": "client",
+      "main": {
+        "mydomain": "example.com",
+        "myorigin": "example.com",
+        "relayhost": "[smtp.example.com]",
+        "smtp_use_tls": "yes"
+      }
     }
   },
   "chef_type": "role",
   "run_list": [
     "recipe[motd]",
+    "recipe[postfix]",
     "recipe[resolver]",
     "recipe[sshd-config]",
     "recipe[system]"
