@@ -42,6 +42,7 @@
     "postfix": {
       "mail_type": "client",
       "main": {
+        "inet_interfaces": "lo1",
         "mydomain": "example.com",
         "myorigin": "example.com",
         "relayhost": "[smtp.example.com]",
