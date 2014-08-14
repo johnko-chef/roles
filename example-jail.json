@@ -52,10 +52,11 @@
   "chef_type": "role",
   "run_list": [
     "recipe[motd]",
-    "recipe[postfix]",
     "recipe[resolver]",
     "recipe[sshd-config]",
-    "recipe[system]"
+    "recipe[system]",
+    "recipe[postfix-config]",
+    "recipe[dbmail-config]"
   ],
   "env_run_lists": {}
 }
