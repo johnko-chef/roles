@@ -53,8 +53,8 @@
   "run_list": [
     "recipe[motd]",
     "recipe[resolver]",
-    "recipe[sshd-config]",
     "recipe[system]",
+    "recipe[openssh-config]",
     "recipe[postfix-config]",
     "recipe[dbmail-config]"
   ],
