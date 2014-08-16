@@ -29,3 +29,8 @@ Optional Jail | NIC   | IP Address      | Port
 littlechef    | lo1   | 10.123.234.250  | nat
 release.build | "     | 10.123.234.251  | nat
 mfsbsd.build  | "     | 10.123.234.252  | nat
+
+QEMU Jail  | NIC   | IP Address      | Port
+-----------|-------|-----------------|-----
+Linux      | tap0  | 10.7.7.100      |
+Windows    | "     | 10.7.7.150      |
